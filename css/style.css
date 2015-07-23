@@ -1,0 +1,340 @@
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../fonts/OpenSans-Bold.ttf) format("opentype");
+}
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background: #101114;    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial ;
+	width: 100%;
+}
+.wrapper {
+    width: 960px;
+	margin: 0 auto;
+    margin-top: 86px;
+}
+
+
+/* Header
+-------------------------------------*/
+.header {
+    height: 162px;
+}
+.logo{
+    width: 318px;
+    height: 162px;
+    float: left;
+    background: #1f2229;
+}
+.logo__img{
+    padding-left: 29px;
+    padding-top: 64px;
+}
+.text-block{
+    width: 638px;
+    float: right;
+    background: #00aeef;
+    height: 162px;
+}
+.text-block__title{
+    font-size: 35px;
+    font-family: 'OpenSansBold';
+    padding-left: 24px;
+    padding-top: 55px;
+    color: #193945;
+}
+.text-block__text{
+    font-size: 14px;
+    width: 440px;
+    padding-left: 28px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+
+/* Middle
+-------------------------------------*/
+.middle {
+	width: 100%;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.content {
+    height: 568px;
+    width: 638px;
+    background: #f7f8f8;
+    float: right;
+    border-top: 1px solid #e8e9e9;
+}
+.payment{
+    padding-left: 25px;
+    padding-top: 45px;    
+}
+.payment__text{
+    padding-bottom: 5px;
+    display: block;
+    font-size: 16px;
+    color: #bec6cf;
+}
+.payment__row{
+    width: 300px;
+}
+.title{
+    font-size: 25px;
+    color: #383d43;
+    font-family: 'OpenSansBold';
+    letter-spacing: -1.8px;
+    padding-bottom: 21px;
+}
+.summ{
+    color: #373c43;
+}
+.pay{
+    float: left;
+    width: 161px;
+}
+.payment__title{
+    padding-top: 30px;
+    padding-bottom: 27px;
+    display: block;
+    font-size: 25px;
+    color: #383d43;
+    font-family: 'OpenSansBold';
+    letter-spacing: -1.8px;
+}
+.bank-card {
+    position: relative;
+}
+.bank-card__item {
+    position: absolute;
+    width: 310px;
+    height: 214px;
+    border-radius: 10px;
+    /* padding: 20px; */
+    border: 1px solid #e4e9ee;
+    padding-left: 16px;
+    padding-top: 20px;
+    padding-right: 24px;
+}
+.bank-card__item:nth-child(1) {
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background: #f7f8f8;
+}
+.bank-card__item:nth-child(2) {
+    padding-top: 84px;
+    left: 196px;
+    top: 20px;
+    text-align: right;
+    z-index: 1;
+    background: url(../img/card-bg.png) repeat-x 0 25px;
+    width: 336px;
+    height: 150px;
+    padding-right: 16px;
+}
+
+.bank-card__input{
+    width: 52px;
+    height: 40px;
+    border: 1px solid #e4e9ee;
+    padding-left: 10px;
+    font-size: 16px;
+    /* 2px что бы не съезжало на ipad, близкий к макету паддинг 7px */
+    margin-right: 2px;
+    margin-bottom: 18px;
+    outline: none;
+}
+
+.bank-card__name{
+    width: 308px;
+    height: 40px;
+    border: 1px solid #e4e9ee;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-top: 12px;
+    outline: none;
+}
+.bank-card__date{
+    height: 38px;
+    margin-right: 5px;
+    padding-left: 12px;
+    padding-right: 30px;
+    font-size: 16px;
+    border: 1px solid #e4e9ee;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px; 
+    text-overflow: '';
+    background: #ffffff url(../img/select.png) no-repeat 85%;    
+    outline: none;
+}
+.bank-card__input:hover,
+.bank-card__name:hover,
+.bank-card__date:hover,
+.bank-card__cvv:hover{
+    -webkit-box-shadow: 0px 0px 2px 1px #cecece;
+    -moz-box-shadow: 0px 0px 2px 1px #cecece;
+    box-shadow: 0px 0px 2px 1px #cecece;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -kthtml-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+/* отключение стрелок селекта в IE */
+select::-ms-expand {
+    display: none;
+}
+.bank-card__cvv{
+    float: right;
+    margin-top: -2px;
+    padding-left: 10px;
+    width: 124px;
+    height: 38px;
+    font-size: 16px;
+    border: 1px solid #e4e9ee;
+    background: #ffffff url(../img/cvv.png) no-repeat 102px;
+    outline: none;
+}
+.bank-card__btn{
+    width: 173px;
+    height: 40px;
+    background: linear-gradient(to top, #83b200, #a4c800);
+    border: none;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-top: 271px;
+    margin-left: 2px;
+    font-family: 'OpenSansBold';
+    font-size: 14px;
+}
+.bank-card__btn:hover{
+    -webkit-box-shadow: 0px 0px 2px 1px #a7e300;
+    -moz-box-shadow: 0px 0px 2px 1px #a7e300;
+    box-shadow: 0px 0px 2px 1px #a7e300;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -kthtml-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.error{
+    box-shadow: 0 0 2px 2px rgba(255, 0, 0, 0.4);
+    border: 1px solid rgba(255, 0, 0, 0.4);
+}
+/* Зеленоватый фон у правильно заполненной формы
+.valid{
+    background: rgba(0, 128, 0, 0.1);
+}
+*/
+
+/* Left Sidebar
+-------------------------------------*/
+.left-sidebar {
+    float: left;
+    width: 318px;
+    margin-left: -100%;
+    position: relative;
+    background: #1f2229;
+}
+.main-menu__link{
+    display: block;
+    padding-left: 28px;
+    padding-top: 28px;
+    padding-bottom: 29px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'OpenSansBold';
+    font-size: 18px;
+}
+.main-menu__link:hover{
+    color: #bababa;
+}
+.active{
+    color: #808592;
+    background: #2a2d37;
+}
+.nav{
+    color: #808592;
+    background: #191c24;  
+}
+
+
+/* Footer
+-------------------------------------*/
+.footer {
+    padding-top: 14px;
+    float: right;
+    height: 246px;
+    width: 638px;
+    background: #373c43;
+    border-bottom: 1px solid #272b30;
+}
+.footer__text{
+    margin-top: 10px;
+    padding-left: 28px;
+
+    color: #7f8591;
+    width: 570px;
+}
